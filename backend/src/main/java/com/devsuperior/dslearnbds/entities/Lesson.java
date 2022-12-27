@@ -39,7 +39,7 @@ public abstract class Lesson implements Serializable {
 	@JoinTable(name = "tb_lesson_done" ,
 		joinColumns = @JoinColumn(name = "lesson_id"),
 		inverseJoinColumns = {
-			@JoinColumn(name ="done_id"),
+			@JoinColumn(name ="user_id"),
 			@JoinColumn(name ="offer_id")
 			}
 	)
